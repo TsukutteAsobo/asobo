@@ -1,0 +1,49 @@
+{
+  "name": "@shinGangan/nuxt-nuxtui-templates",
+  "description": "Nuxt + Nuxt UI repository template.",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "shinGangan",
+    "url": "https://github.com/shinGangan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinGangan/nuxt-nuxtui-templates.git"
+  },
+  "engines": {
+    "node": "^22.14.0 || >=24.0.0",
+    "npm": "🚨 Please use pnpm instead.",
+    "yarn": "🚨 Please use pnpm instead."
+  },
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "ui": "pnpm -C src",
+    "clean": "run-s clean:*",
+    "clean:nuxt": "npx nuxi cleanup ./src",
+    "clean:node": "rimraf node_modules src/node_modules",
+    "lint": "run-s lint:*",
+    "lint:ui": "pnpm ui lint",
+    "test": "run-s test:*",
+    "test:ui": "pnpm ui test",
+    "gen": "scaffdog generate -p .config/.scaffdog",
+    "gen:cm": "pnpm gen component",
+    "gen:cmp": "npx nuxi add composable --cwd src",
+    "gen:page": "npx nuxi add page --cwd src",
+    "gen:api": "npx nuxi add api --cwd src"
+  },
+  "devDependencies": {
+    "@intlify/eslint-plugin-vue-i18n": "catalog:lint",
+    "@vitest/eslint-plugin": "catalog:test",
+    "eslint": "catalog:lint",
+    "eslint-plugin-jsonc": "catalog:lint",
+    "eslint-plugin-vue-scoped-css": "catalog:lint",
+    "eslint-plugin-vuejs-accessibility": "catalog:lint",
+    "eslint-plugin-yml": "catalog:lint",
+    "npm-run-all2": "catalog:dev",
+    "rimraf": "catalog:dev",
+    "scaffdog": "catalog:dev",
+    "vitest": "catalog:test"
+  }
+}

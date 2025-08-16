@@ -1,0 +1,36 @@
+{
+  "name": "nuxt-nuxtui-templates/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.14.0 || >=24.0.0",
+    "npm": "🚨 Please use pnpm instead.",
+    "yarn": "🚨 Please use pnpm instead."
+  },
+  "packageManager": "pnpm@10.14.0",
+  "config": {
+    "vitest": "../.config/vitest.ts"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "test": "vitest -c $npm_package_config_vitest"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "catalog:ui3",
+    "@iconify-json/lucide": "catalog:ui3",
+    "@nuxt/devtools": "catalog:dev",
+    "@nuxt/eslint-config": "catalog:lint",
+    "@nuxt/test-utils": "catalog:test",
+    "@nuxt/ui": "catalog:ui3",
+    "@nuxtjs/i18n": "catalog:prod",
+    "@vue/test-utils": "catalog:test",
+    "nuxt": "catalog:prod",
+    "vue": "catalog:prod"
+  }
+}

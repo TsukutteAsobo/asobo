@@ -1,0 +1,33 @@
+name: Lint using ESLint + reviewdog
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '*.md'
+      - '.github/**/*'
+      - '.vscode/**'
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '*.md'
+      - '.github/**/*'
+      - '.vscode/**'
+
+jobs:
+  lint:
+    # ref: https://github.com/shinGangan/.github/blob/main/.github/workflows/linter-eslint-using-reviewdog.yml
+    uses: shinGangan/.github/.github/workflows/linter-eslint-using-reviewdog.yml@main
+    permissions:
+      contents: read
+      pull-requests: write
+    strategy:
+      matrix:
+        env: [src]
+    with:
+      workdir: ${{ matrix.env }}
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+      repo: ${{ github.repository }}
