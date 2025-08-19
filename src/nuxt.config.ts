@@ -23,6 +23,10 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  colorMode: {
+    preference: 'light'
+  },
+
   ui: {},
 
   routeRules: {
