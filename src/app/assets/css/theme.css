@@ -2,6 +2,7 @@
 @import '@nuxt/ui';
 
 @theme static {
+  /* surface色を作成 */
   --color-surface-50: #ffffea;
   --color-surface-100: #fffbc5;
   --color-surface-200: #fff885;
@@ -13,4 +14,7 @@
   --color-surface-800: #985108;
   --color-surface-900: #7c420b;
   --color-surface-950: #482200;
+
+  /* テキストを黒色に設定 */
+  --ui-text-inverted: var(--color-black);
 }
