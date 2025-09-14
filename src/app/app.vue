@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { UiFooter } from '#components';
+
 useHead({
   meta: [
     { charset: 'utf-8' },
@@ -17,4 +19,7 @@ useHead({
       <NuxtPage />
     </NuxtLayout>
   </UApp>
+  <footer>
+    <UiFooter />
+  </footer>
 </template>

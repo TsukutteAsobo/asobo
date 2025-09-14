@@ -49,6 +49,9 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    defaultLocale: 'ja'
+    defaultLocale: 'ja',
+    bundle: {
+      optimizeTranslationDirective: false
+    }
   }
 });
