@@ -18,8 +18,8 @@ useHead({
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+    <footer>
+      <UiFooter />
+    </footer>
   </UApp>
-  <footer>
-    <UiFooter />
-  </footer>
 </template>
