@@ -23,6 +23,7 @@ const snsLinks = ref<NavigationMenuItem[][]>([
   ]
 ]);
 
+// TODO: リンクをダミーデータにしているのでそれを書き換える
 const links = ref<NavigationMenuItem[][]>([
   [
     {
