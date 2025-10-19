@@ -1,14 +1,23 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
   <UContainer>
     <slot />
   </UContainer>
   <UFooter>
-      <template #right>
+    <template #left>
+      <div class="text-sm text-neutral-500">
+        © 2025 TUCURO
+      </div>
+    </template>
+    <template #right>
       <UButton
         icon="i-simple-icons-discord"
         color="neutral"
         variant="ghost"
-        to="https://discord.com/invite/Tn5U5qKg9A"
+        to="https://go.nuxt.com/discord"
         target="_blank"
         aria-label="Discord"
       />
@@ -16,7 +25,7 @@
         icon="i-simple-icons-x"
         color="neutral"
         variant="ghost"
-        to="https://x.com/tokumemo0000"
+        to="https://go.nuxt.com/x"
         target="_blank"
         aria-label="X"
       />
@@ -24,7 +33,7 @@
         icon="i-simple-icons-github"
         color="neutral"
         variant="ghost"
-        to="https://github.com/TsukutteAsobo/asobo"
+        to="https://github.com/nuxt/nuxt"
         target="_blank"
         aria-label="GitHub"
       />
@@ -32,13 +41,10 @@
         icon="i-simple-icons-instagram"
         color="neutral"
         variant="ghost"
-        to="https://www.instagram.com/tokumemo0000/"
+        to="https://go.nuxt.com/instagram"
         target="_blank"
         aria-label="Instagram"
       />
     </template>
-    <div class="text-center">
-      © 2024 TUCURO. All rights reserved.
-    </div>
   </UFooter>
 </template>
