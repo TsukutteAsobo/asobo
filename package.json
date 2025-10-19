@@ -45,5 +45,8 @@
     "rimraf": "catalog:dev",
     "scaffdog": "catalog:dev",
     "vitest": "catalog:test"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.0.1"
   }
 }
