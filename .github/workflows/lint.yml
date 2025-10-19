@@ -2,15 +2,13 @@ name: Lint using ESLint + reviewdog
 
 on:
   push:
-    branches:
-      - main
+    branches: '**'
     paths-ignore:
       - '*.md'
       - '.github/**/*'
       - '.vscode/**'
   pull_request:
-    branches:
-      - main
+    branches: '**'
     paths-ignore:
       - '*.md'
       - '.github/**/*'
