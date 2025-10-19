@@ -13,6 +13,7 @@
       </div>
     </template>
     <template #right>
+      <!-- TODO: リンクは変える -->
       <UButton
         icon="i-simple-icons-discord"
         color="neutral"
