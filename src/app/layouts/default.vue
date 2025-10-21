@@ -33,7 +33,7 @@ const pageLinks = ref<NavigationMenuItem[]>([
   },
   {
     icon: 'i-lucide-chevron-right',
-    label: 'script',
+    label: 'お問い合わせ',
     to: 'https://go.nuxt.com/contact'
   }
 ]);
