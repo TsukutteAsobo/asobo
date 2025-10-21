@@ -1,9 +1,73 @@
 <script setup lang="ts">
+import type { NavigationMenuItem } from '#ui/types';
 
+const snsLinks = ref<NavigationMenuItem[]>([
+  {
+    icon: 'i-simple-icons-discord',
+    to: 'https://go.nuxt.com/discord'
+  },
+  {
+    icon: 'i-simple-icons-x',
+    to: 'https://go.nuxt.com/x'
+  },
+  {
+    icon: 'i-simple-icons-github',
+    to: 'https://github.com/nuxt/nuxt'
+  },
+  {
+    icon: 'i-simple-icons-instagram',
+    to: 'https://go.nuxt.com/instagram'
+  }
+]);
+
+const pageLinks = ref<NavigationMenuItem[]>([
+  {
+    icon: 'i-lucide-chevron-right',
+    label: 'ホーム',
+    to: 'https://go.nuxt.com/'
+  },
+  {
+    icon: 'i-lucide-chevron-right',
+    label: '記事一覧',
+    to: 'https://go.nuxt.com/articles'
+  },
+  {
+    icon: 'i-lucide-chevron-right',
+    label: 'script',
+    to: 'https://go.nuxt.com/contact'
+  }
+]);
 </script>
 
 <template>
   <div>
+    <UHeader title="ASOBO" to="https://go.nuxt.com/" :toggle="false">
+      <template #right>
+        <USlideover side="top" title="ASOBO">
+          <UButton
+            icon="i-lucide-menu"
+            color="neutral"
+            variant="ghost"
+            aria-label="Menu"
+          />
+
+          <template #body>
+            <UNavigationMenu
+              :items="pageLinks"
+              :ui="{ linkLabel: 'font-semibold' }"
+              orientation="vertical"
+              variant="link"
+              color="neutral"
+            />
+            <UNavigationMenu
+              color="neutral"
+              class="justify-center"
+              :items="snsLinks"
+            />
+          </template>
+        </USlideover>
+      </template>
+    </UHeader>
     <UContainer>
       <slot />
     </UContainer>
