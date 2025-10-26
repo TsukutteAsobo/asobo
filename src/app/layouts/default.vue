@@ -24,17 +24,17 @@ const pageLinks = ref<NavigationMenuItem[]>([
   {
     icon: 'i-lucide-chevron-right',
     label: 'ホーム',
-    to: 'https://go.nuxt.com/'
+    to: '/'
   },
   {
     icon: 'i-lucide-chevron-right',
-    label: '記事一覧',
-    to: 'https://go.nuxt.com/articles'
+    label: 'おしらせ',
+    to: '/news'
   },
   {
     icon: 'i-lucide-chevron-right',
     label: 'お問い合わせ',
-    to: 'https://go.nuxt.com/contact'
+    to: '/contact'
   }
 ]);
 </script>
